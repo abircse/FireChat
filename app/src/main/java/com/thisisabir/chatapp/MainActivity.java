@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<Void> task) {
 
                     Snackbar.make(relativeLayout,"You Have been Sign out",Snackbar.LENGTH_SHORT).show();
+                    finish();
                 }
             });
         }
