@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    tools:context=".MainActivity">
+
+
+        <ListView
+            android:id="@+id/message_list"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/ln"
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true"
+            android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:id="@+id/ln"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/messagebox"
+            android:layout_width="0dp"
+            android:hint="Write Message Here...."
+            android:layout_weight="1.7"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:id="@+id/fab"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_send"
+            android:tint="@android:color/white"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
